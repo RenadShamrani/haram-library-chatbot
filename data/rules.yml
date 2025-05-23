@@ -1,0 +1,114 @@
+version: "3.1"
+
+rules:
+
+- rule: بدء المحادثة بالترحيب
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: نهاية المحادثة
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: رد على سؤال ساعات العمل
+  steps:
+    - intent: faq_hours
+    - action: utter_faq_hours
+
+- rule: رد على سؤال الإعارة
+  steps:
+    - intent: faq_borrow
+    - action: utter_faq_borrow
+
+- rule: رد على سؤال شراء الكتب
+  steps:
+    - intent: faq_buy_books
+    - action: utter_faq_buy_books
+
+- rule: رد على سؤال القصص والروايات
+  steps:
+    - intent: faq_novels
+    - action: utter_faq_novels
+
+- rule: رد على سؤال الاطلاع على المخطوطات
+  steps:
+    - intent: faq_manuscripts
+    - action: utter_faq_manuscripts
+
+- rule: رد على سؤال الإنترنت وأجهزة الحاسب
+  steps:
+    - intent: faq_internet
+    - action: utter_faq_internet
+
+- rule: رد على سؤال البحث عن كتاب
+  steps:
+    - intent: faq_search_book
+    - action: utter_faq_search_book
+
+- rule: رد على سؤال الكتب الإلكترونية
+  steps:
+    - intent: faq_ebooks
+    - action: utter_faq_ebooks
+
+- rule: رد على سؤال المستندات المطلوبة
+  steps:
+    - intent: faq_documents_required
+    - action: utter_faq_documents_required
+
+- rule: رد على سؤال نسخ الكتب
+  steps:
+    - intent: faq_copy_policy
+    - action: utter_faq_copy_policy
+
+- rule: رد على سؤال الكتب النادرة
+  steps:
+    - intent: faq_rare_books
+    - action: utter_faq_rare_books
+
+- rule: رد على سؤال الطباعة أو التصوير
+  steps:
+    - intent: faq_printing
+    - action: utter_faq_printing
+
+- rule: رد على سؤال استخدام قاعات الاجتماعات
+  steps:
+    - intent: faq_meeting_rooms
+    - action: utter_faq_meeting_rooms
+
+- rule: رد على سؤال الفعاليات والأنشطة
+  steps:
+    - intent: faq_events
+    - action: utter_faq_events
+
+- rule: رد على سؤال اقتراح كتاب
+  steps:
+    - intent: faq_suggest_book
+    - action: utter_faq_suggest_book
+
+- rule: رد على سؤال إيجاد مكان الكتاب
+  steps:
+    - intent: faq_book_location
+    - action: utter_faq_book_location
+
+- rule: رد على سؤال رمز التصنيف
+  steps:
+    - intent: faq_classification_code
+    - action: utter_faq_classification_code
+
+- rule: رد على سؤال المساعدة في إيجاد موضوع
+  steps:
+    - intent: faq_help_subject
+    - action: utter_faq_help_subject
+
+- rule: رد على سؤال المساعدة في قواعد البيانات
+  steps:
+    - intent: faq_help_databases
+    - action: utter_faq_help_databases
+
+- rule: رد على سؤال موقع المكتبة
+  steps:
+    - intent: faq_location
+    - action: utter_faq_location
+

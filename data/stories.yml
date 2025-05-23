@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: التفاعل مع الأسئلة الشائعة
+  steps:
+    - intent: faq_hours
+    - action: utter_faq_hours
+
+    - intent: faq_borrow
+    - action: utter_faq_borrow
+
+    - intent: faq_buy_books
+    - action: utter_faq_buy_books
+
+    - intent: faq_novels
+    - action: utter_faq_novels
+
+    - intent: faq_manuscripts
+    - action: utter_faq_manuscripts
+
+    - intent: faq_internet
+    - action: utter_faq_internet
+
+    - intent: faq_search_book
+    - action: utter_faq_search_book
+
+    - intent: faq_ebooks
+    - action: utter_faq_ebooks
+
+    - intent: faq_documents_required
+    - action: utter_faq_documents_required
+
+    - intent: faq_copy_policy
+    - action: utter_faq_copy_policy
+
+    - intent: faq_rare_books
+    - action: utter_faq_rare_books
+
+    - intent: faq_printing
+    - action: utter_faq_printing
+
+    - intent: faq_meeting_rooms
+    - action: utter_faq_meeting_rooms
+
+    - intent: faq_events
+    - action: utter_faq_events
+
+    - intent: faq_suggest_book
+    - action: utter_faq_suggest_book
+
+    - intent: faq_book_location
+    - action: utter_faq_book_location
+
+    - intent: faq_classification_code
+    - action: utter_faq_classification_code
+
+    - intent: faq_help_subject
+    - action: utter_faq_help_subject
+
+    - intent: faq_help_databases
+    - action: utter_faq_help_databases
+
+    - intent: faq_location
+    - action: utter_faq_location
