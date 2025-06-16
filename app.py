@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -7,9 +7,6 @@ import aiohttp
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
-
-# رابط Rasa المنشور على Render
-RASA_SERVER_URL = "https://haram-library-chatbot.onrender.com/webhooks/rest/webhook"
 
 class UserMessage(BaseModel):
     message: str
@@ -53,10 +50,12 @@ async def main():
                 const message = input.value.trim();
                 if (!message) return;
 
+                // عرض رسالة المستخدم
                 chatBox.innerHTML += `<div class="msg user">🧑‍💼 أنت: ${message}</div>`;
                 input.value = "";
                 chatBox.scrollTop = chatBox.scrollHeight;
 
+                // إرسال الرسالة للسيرفر
                 const response = await fetch("/chat", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -66,9 +65,11 @@ async def main():
                 const data = await response.json();
                 const reply = data.reply;
 
+                // عرض رد البوت
                 chatBox.innerHTML += `<div class="msg bot">🤖 البوت: ${reply}</div>`;
                 chatBox.scrollTop = chatBox.scrollHeight;
 
+                // تشغيل صوت الإشعار
                 document.getElementById("notif-sound").play();
             }
         </script>
@@ -80,18 +81,10 @@ async def main():
 async def chat_with_bot(user_message: UserMessage):
     async with aiohttp.ClientSession() as session:
         async with session.post(
-            url=RASA_SERVER_URL,
+            "http://localhost:5005/webhooks/rest/webhook",
             json={"sender": "user", "message": user_message.message},
         ) as resp:
             bot_response = await resp.json()
 
-    # استخراج الرد بأمان
-    reply = "لم أفهم، من فضلك أعد المحاولة."
-    if bot_response and isinstance(bot_response, list):
-        first_msg = bot_response[0]
-        if 'text' in first_msg:
-            reply = first_msg['text']
-        elif 'custom' in first_msg and isinstance(first_msg['custom'], dict):
-            reply = first_msg['custom'].get('text', reply)
-
+    reply = bot_response[0]['text'] if bot_response else "لم أفهم، من فضلك أعد المحاولة."
     return {"reply": reply}
