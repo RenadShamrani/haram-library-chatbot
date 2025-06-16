@@ -85,5 +85,13 @@ async def chat_with_bot(user_message: UserMessage):
         ) as resp:
             bot_response = await resp.json()
 
-    reply = bot_response[0]['text'] if bot_response else "لم أفهم، من فضلك أعد المحاولة."
+    # استخراج الرد بأمان
+    reply = "لم أفهم، من فضلك أعد المحاولة."
+    if bot_response and isinstance(bot_response, list):
+        first_msg = bot_response[0]
+        if 'text' in first_msg:
+            reply = first_msg['text']
+        elif 'custom' in first_msg and isinstance(first_msg['custom'], dict):
+            reply = first_msg['custom'].get('text', reply)
+
     return {"reply": reply}
