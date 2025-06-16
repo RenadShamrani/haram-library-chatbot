@@ -3,9 +3,8 @@ services:
     name: haram-chatbot
     env: python
     buildCommand: ""
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
     plan: free
     envVars:
       - key: WEB_CONCURRENCY
         value: "1"
-        
