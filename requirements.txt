@@ -2,3 +2,4 @@ fastapi
 aiohttp
 uvicorn
 rasa==3.6.21
+spacy
