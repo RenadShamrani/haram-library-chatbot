@@ -1,17 +1,25 @@
+# services:
+#   - type: web
+#     name: haram-chatbot-frontend
+#     env: python
+#     buildCommand: ""
+#     startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
+#     plan: free
+#     envVars:
+#       - key: WEB_CONCURRENCY
+#         value: "1"
+
+#   - type: web
+#     name: haram-chatbot-rasa
+#     env: python
+#     buildCommand: rasa train
+#     startCommand: rasa run --enable-api --cors "*" --debug --port 10000
+#     plan: free
+
 services:
   - type: web
-    name: haram-chatbot-frontend
-    env: python
-    buildCommand: ""
-    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
-    plan: free
-    envVars:
-      - key: WEB_CONCURRENCY
-        value: "1"
-
-  - type: web
-    name: haram-chatbot-rasa
+    name: rasa-backend
     env: python
     buildCommand: rasa train
-    startCommand: rasa run --enable-api --cors "*" --port 5005 --debug
+    startCommand: rasa run --enable-api --cors "*" --debug --port 10000
     plan: free
