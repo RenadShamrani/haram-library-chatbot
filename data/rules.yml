@@ -1,0 +1,142 @@
+version: "3.1"
+rules:
+
+- rule: Respond to greeting
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Respond to farewell
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Respond to library hours question
+  steps:
+    - intent: faq_hours
+    - action: utter_faq_hours
+
+- rule: Respond to library location question
+  steps:
+    - intent: faq_location
+    - action: utter_faq_location
+
+- rule: Respond to library services question
+  steps:
+    - intent: faq_services
+    - action: utter_faq_services
+
+- rule: Respond to manuscripts question
+  steps:
+    - intent: faq_manuscripts
+    - action: utter_faq_manuscripts
+
+- rule: Respond to library rules question
+  steps:
+    - intent: faq_rules
+    - action: utter_faq_rules
+
+- rule: Respond to general help
+  steps:
+    - intent: faq_help
+    - action: utter_faq_help
+
+- rule: Respond to rooms availability
+  steps:
+    - intent: faq_rooms
+    - action: utter_faq_rooms
+
+- rule: Respond to events question
+  steps:
+    - intent: faq_events
+    - action: utter_faq_events
+
+- rule: Respond to internet access
+  steps:
+    - intent: faq_internet
+    - action: utter_faq_internet
+
+- rule: Respond to borrowing books
+  steps:
+    - intent: faq_borrow
+    - action: utter_faq_borrow
+
+- rule: Respond to buying books
+  steps:
+    - intent: faq_buy_books
+    - action: utter_faq_buy_books
+
+- rule: Respond to novels question
+  steps:
+    - intent: faq_novels
+    - action: utter_faq_novels
+
+- rule: Respond to ebooks question
+  steps:
+    - intent: faq_ebooks
+    - action: utter_faq_ebooks
+
+- rule: Respond to copy policy
+  steps:
+    - intent: faq_copy_policy
+    - action: utter_faq_copy_policy
+
+- rule: Respond to suggestion policy
+  steps:
+    - intent: faq_suggestions
+    - action: utter_faq_suggestions
+
+- rule: Respond to classification code
+  steps:
+    - intent: faq_classification_code
+    - action: utter_faq_classification_code
+
+- rule: Respond to help on subject
+  steps:
+    - intent: faq_help_subject
+    - action: utter_faq_help_subject
+
+- rule: Respond to help using databases
+  steps:
+    - intent: faq_help_databases
+    - action: utter_faq_help_databases
+
+- rule: Respond to search for a book
+  steps:
+    - intent: faq_search_book
+    - action: utter_faq_search_book
+
+- rule: Respond to documents required
+  steps:
+    - intent: faq_documents_required
+    - action: utter_faq_documents_required
+
+- rule: Respond to rare books question
+  steps:
+    - intent: faq_rare_books
+    - action: utter_faq_rare_books
+
+- rule: Respond to printing service
+  steps:
+    - intent: faq_printing
+    - action: utter_faq_printing
+
+- rule: Respond to meeting rooms
+  steps:
+    - intent: faq_meeting_rooms
+    - action: utter_faq_meeting_rooms
+
+- rule: Respond to book suggestion
+  steps:
+    - intent: faq_suggest_book
+    - action: utter_faq_suggest_book
+
+- rule: Respond to book location
+  steps:
+    - intent: faq_book_location
+    - action: utter_faq_book_location
+
+- rule: Respond to open-ended questions
+  steps:
+    - intent: faq_anything_else
+    - action: utter_anything_else

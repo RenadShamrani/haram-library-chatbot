@@ -1,0 +1,142 @@
+version: '3.1'
+stories:
+
+- story: greet user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: farewell user
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: ask library hours
+  steps:
+    - intent: faq_hours
+    - action: utter_faq_hours
+
+- story: ask library location
+  steps:
+    - intent: faq_location
+    - action: utter_faq_location
+
+- story: ask about library services
+  steps:
+    - intent: faq_services
+    - action: utter_faq_services
+
+- story: ask about manuscripts
+  steps:
+    - intent: faq_manuscripts
+    - action: utter_faq_manuscripts
+
+- story: ask about library rules
+  steps:
+    - intent: faq_rules
+    - action: utter_faq_rules
+
+- story: ask for general help
+  steps:
+    - intent: faq_help
+    - action: utter_faq_help
+
+- story: ask about room availability
+  steps:
+    - intent: faq_rooms
+    - action: utter_faq_rooms
+
+- story: ask about events
+  steps:
+    - intent: faq_events
+    - action: utter_faq_events
+
+- story: ask about internet access
+  steps:
+    - intent: faq_internet
+    - action: utter_faq_internet
+
+- story: ask about borrowing
+  steps:
+    - intent: faq_borrow
+    - action: utter_faq_borrow
+
+- story: ask about buying books
+  steps:
+    - intent: faq_buy_books
+    - action: utter_faq_buy_books
+
+- story: ask about novels
+  steps:
+    - intent: faq_novels
+    - action: utter_faq_novels
+
+- story: ask about ebooks
+  steps:
+    - intent: faq_ebooks
+    - action: utter_faq_ebooks
+
+- story: ask about copying policy
+  steps:
+    - intent: faq_copy_policy
+    - action: utter_faq_copy_policy
+
+- story: ask about suggestion policy
+  steps:
+    - intent: faq_suggestions
+    - action: utter_faq_suggestions
+
+- story: ask about classification code
+  steps:
+    - intent: faq_classification_code
+    - action: utter_faq_classification_code
+
+- story: ask for subject help
+  steps:
+    - intent: faq_help_subject
+    - action: utter_faq_help_subject
+
+- story: ask for help using databases
+  steps:
+    - intent: faq_help_databases
+    - action: utter_faq_help_databases
+
+- story: ask how to search a book
+  steps:
+    - intent: faq_search_book
+    - action: utter_faq_search_book
+
+- story: ask about required documents
+  steps:
+    - intent: faq_documents_required
+    - action: utter_faq_documents_required
+
+- story: ask about rare books
+  steps:
+    - intent: faq_rare_books
+    - action: utter_faq_rare_books
+
+- story: ask about printing service
+  steps:
+    - intent: faq_printing
+    - action: utter_faq_printing
+
+- story: ask about meeting rooms
+  steps:
+    - intent: faq_meeting_rooms
+    - action: utter_faq_meeting_rooms
+
+- story: suggest a book
+  steps:
+    - intent: faq_suggest_book
+    - action: utter_faq_suggest_book
+
+- story: ask about book location
+  steps:
+    - intent: faq_book_location
+    - action: utter_faq_book_location
+
+- story: user has open-ended question
+  steps:
+    - intent: faq_anything_else
+    - action: utter_anything_else
