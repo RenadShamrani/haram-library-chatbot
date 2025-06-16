@@ -18,8 +18,11 @@
 
 services:
   - type: web
-    name: rasa-backend
+    name: haram-library-chatbot
     env: python
-    buildCommand: rasa train
-    startCommand: rasa run --enable-api --cors "*" --debug --port 10000
     plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: rasa run --enable-api --cors "*" --debug --port 10000
+    envVars:
+      - key: PORT
+        value: 10000
