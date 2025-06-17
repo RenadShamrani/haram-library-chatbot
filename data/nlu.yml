@@ -14,6 +14,16 @@ nlu:
     - تحية طيبة
     - كيف حالك؟
     - مرحبا بوت المكتبة
+    - salam
+    - salamu alaykum
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey
+    - how are you?
+    - greetings
+    - welcome
 
 - intent: goodbye
   examples: |
@@ -26,6 +36,14 @@ nlu:
     - يومك سعيد
     - شكرًا للمساعدة
     - لا أحتاج شيئًا آخر
+    - goodbye
+    - bye
+    - see you
+    - thanks
+    - thank you
+    - see you later
+    - I don't need anything else
+    - appreciate your help
 
 - intent: faq_hours
   examples: |
@@ -36,6 +54,11 @@ nlu:
     - متى تكون المكتبة مفتوحة؟
     - متى أقدر أزور المكتبة؟
     - وقت الدوام الرسمي
+    - what are the library's working hours?
+    - when does the library open?
+    - library schedule?
+    - what time can I visit the library?
+    - opening hours of the library?
 
 - intent: faq_location
   examples: |
@@ -44,6 +67,11 @@ nlu:
     - وين ألقى مكتبة الحرم المكي؟
     - أبغى العنوان الكامل للمكتبة
     - كيف أوصل لمكتبة الحرم؟
+    - where is the library located?
+    - library address?
+    - how can I reach the library?
+    - what's the location of the library?
+    - full address of the library?
 
 - intent: faq_services
   examples: |
@@ -52,6 +80,11 @@ nlu:
     - الخدمات المتاحة في المكتبة
     - أحتاج أعرف خدمات المكتبة
     - هل أقدر أستخدم قواعد البيانات عندكم؟
+    - what services are available in the library?
+    - what does the library offer?
+    - available services?
+    - can I use the databases?
+    - tell me about library services
 
 - intent: faq_manuscripts
   examples: |
@@ -60,6 +93,11 @@ nlu:
     - هل المخطوطات متاحة؟
     - هل في نسخ إلكترونية من المخطوطات؟
     - كيف أبحث عن المخطوطات؟
+    - are there manuscripts in the library?
+    - can I access manuscripts?
+    - are digital copies of manuscripts available?
+    - how do I search for manuscripts?
+    - is there a manuscript section?
 
 - intent: faq_rules
   examples: |
@@ -68,6 +106,11 @@ nlu:
     - القواعد داخل المكتبة
     - التعليمات الخاصة بالمكتبة
     - هل يُسمح بإدخال الجوالات؟
+    - what are the library rules?
+    - any entry requirements?
+    - library policies?
+    - can I bring my phone?
+    - rules inside the library?
 
 - intent: faq_help
   examples: |
@@ -76,6 +119,11 @@ nlu:
     - ساعدني في استخدام المكتبة
     - أحتاج استفسر عن خدمة
     - ممكن استشارة؟
+    - I need help
+    - can you help me?
+    - help me use the library
+    - I need assistance
+    - can I get advice?
 
 - intent: faq_rooms
   examples: |
@@ -84,6 +132,11 @@ nlu:
     - هل أقدر أستخدم قاعات المكتبة؟
     - عندكم غرف اجتماعات؟
     - هل القاعات مفتوحة للجميع؟
+    - are there rooms available?
+    - how do I book a room?
+    - can I use the meeting rooms?
+    - do you have meeting spaces?
+    - are rooms open to everyone?
 
 - intent: faq_events
   examples: |
@@ -92,6 +145,11 @@ nlu:
     - ايش نوع الفعاليات عندكم؟
     - هل فيه لقاءات علمية؟
     - أبغى أحضر فعالية في المكتبة
+    - do you host events?
+    - are there training courses or workshops?
+    - what kind of events do you offer?
+    - are there academic meetings?
+    - I want to attend an event
 
 - intent: faq_internet
   examples: |
@@ -100,6 +158,11 @@ nlu:
     - أقدر أستخدم النت داخل المكتبة؟
     - هل توفرون أجهزة كمبيوتر؟
     - هل النت مجاني داخل المكتبة؟
+    - is internet available?
+    - do you have wifi?
+    - can I use the internet?
+    - are computers available?
+    - is the wifi free?
 
 - intent: faq_borrow
   examples: |
@@ -108,6 +171,11 @@ nlu:
     - أبغى أستعير كتاب
     - هل فيه استعارة خارجية؟
     - ممكن أخذ كتاب للبيت؟
+    - can I borrow books?
+    - how does borrowing work?
+    - I want to borrow a book
+    - is external borrowing allowed?
+    - can I take a book home?
 
 - intent: faq_buy_books
   examples: |
@@ -116,6 +184,11 @@ nlu:
     - هل الكتب معروضة للبيع؟
     - هل فيه متجر داخل المكتبة؟
     - كيف أشتري من المكتبة؟
+    - do you sell books?
+    - can I buy a book from you?
+    - are the books for sale?
+    - is there a bookstore?
+    - how do I purchase books?
 
 - intent: faq_novels
   examples: |
@@ -124,6 +197,11 @@ nlu:
     - هل عندكم كتب أدبية؟
     - هل في مجموعة قصص؟
     - أقدر ألاقي روايات مشهورة؟
+    - do you have novels?
+    - I want to read a story or novel
+    - are there literary books?
+    - do you have a short story collection?
+    - can I find famous novels?
 
 - intent: faq_ebooks
   examples: |
@@ -132,6 +210,11 @@ nlu:
     - كيف أحصل على نسخة إلكترونية؟
     - عندكم مستودع رقمي؟
     - هل الكتب الرقمية متاحة؟
+    - are there e-books?
+    - I want a PDF version
+    - how do I get a digital copy?
+    - do you have a digital repository?
+    - are digital books available?
 
 - intent: faq_copy_policy
   examples: |
@@ -140,6 +223,11 @@ nlu:
     - هل في حد معين للتصوير؟
     - كيف نظام التصوير عندكم؟
     - هل أقدر أنسخ صفحات من كتاب؟
+    - can I photocopy books?
+    - what's the allowed copy percentage?
+    - is there a limit on copying?
+    - how does copying work?
+    - can I duplicate book pages?
 
 - intent: faq_suggestions
   examples: |
@@ -148,6 +236,11 @@ nlu:
     - هل أقدر أرسل ملاحظات؟
     - أبغى أشارك اقتراح للمكتبة
     - كيف أقدّم توصية؟
+    - I have a suggestion
+    - how can I suggest a book?
+    - can I give feedback?
+    - I want to submit a suggestion
+    - how do I make a recommendation?
 
 - intent: faq_classification_code
   examples: |
@@ -156,6 +249,11 @@ nlu:
     - ساعدني أفهم أرقام الكتب
     - كيف أبحث باستخدام التصنيف؟
     - ما هو نظام التصنيف المستخدم؟
+    - how do I find the classification number?
+    - what does the code mean?
+    - help me understand book codes
+    - how to search by classification?
+    - what classification system do you use?
 
 - intent: faq_help_subject
   examples: |
@@ -164,6 +262,11 @@ nlu:
     - كيف أبحث في موضوع معين؟
     - عندي موضوع بس ما أعرف من وين أبدأ
     - ساعدني ألقى كتب عن [الذكاء الاصطناعي](topic)
+    - I need help with my research topic
+    - can you help me find sources?
+    - how do I search for a topic?
+    - I have a topic but don’t know where to start
+    - help me find books about [AI](topic)
 
 - intent: faq_help_databases
   examples: |
@@ -172,6 +275,11 @@ nlu:
     - ساعدوني في البحث الإلكتروني
     - هل في شرح لطريقة استخدام القواعد؟
     - كيف أبحث في قاعدة المعلومات؟
+    - what databases are available?
+    - how do I use the databases?
+    - help me with electronic searching
+    - is there a guide for using databases?
+    - how do I search in a database?
 
 - intent: faq_search_book
   examples: |
@@ -180,6 +288,11 @@ nlu:
     - كيف أعرف إذا الكتاب متوفر؟
     - كيف أستخدم الفهرس الآلي؟
     - هل أقدر أبحث باسم المؤلف؟
+    - how do I search for a book?
+    - I want to find a book titled [Arabic Language](book_title)
+    - how do I know if a book is available?
+    - how to use the catalog?
+    - can I search by author name?
 
 - intent: faq_documents_required
   examples: |
@@ -188,6 +301,11 @@ nlu:
     - هل الدخول مفتوح للجميع؟
     - هل يحتاج تسجيل مسبق؟
     - هل تشترطون أوراق معينة؟
+    - do I need an entry card?
+    - what documents are required?
+    - is entry open to everyone?
+    - do I need to register in advance?
+    - are any specific papers needed?
 
 - intent: faq_rare_books
   examples: |
@@ -196,6 +314,11 @@ nlu:
     - كيف أبحث عن كتاب نادر؟
     - هل في قسم خاص بالكتب القديمة؟
     - هل الكتب النادرة متاحة للعرض؟
+    - do you have rare books?
+    - I want to see the rare collection
+    - how can I search for a rare book?
+    - is there a section for old books?
+    - are rare books available for viewing?
 
 - intent: faq_printing
   examples: |
@@ -204,6 +327,11 @@ nlu:
     - هل في آلة تصوير؟
     - كيف أطبع مستند داخل المكتبة؟
     - هل الطباعة متاحة للطلاب؟
+    - is printing available?
+    - can I print my papers?
+    - do you have a copier?
+    - how do I print a document inside the library?
+    - is printing allowed for students?
 
 - intent: faq_meeting_rooms
   examples: |
@@ -212,6 +340,11 @@ nlu:
     - هل الغرف متاحة للاستخدام؟
     - ممكن أستخدم غرفة خاصة؟
     - هل يلزم تنسيق مسبق للحجز؟
+    - how can I reserve a hall?
+    - do you have meeting rooms?
+    - are rooms available for use?
+    - can I use a private room?
+    - is prior coordination needed for booking?
 
 - intent: faq_suggest_book
   examples: |
@@ -220,6 +353,11 @@ nlu:
     - كيف أطلب توفر كتاب محدد؟
     - هل تستقبلون طلبات شراء كتب؟
     - أبغى تضيفون كتاب بعنوان [فقه المعاملات](book_title)
+    - can I request adding a book?
+    - I want to suggest a new book
+    - how do I request a specific book?
+    - do you accept book purchase suggestions?
+    - I want to add a book titled [Fiqh of Transactions](book_title)
 
 - intent: faq_book_location
   examples: |
@@ -228,6 +366,11 @@ nlu:
     - ما هو رقم التصنيف للكتاب؟
     - كيف أبحث عن موقع الكتاب في الرفوف؟
     - وين أحصل كتاب بعنوان [التفسير الميسر](book_title)?
+    - where can I find the book?
+    - how do I locate a specific book?
+    - what is the book classification number?
+    - how do I find the book on the shelf?
+    - where can I find the book titled [Easy Tafsir](book_title)?
 
 - intent: faq_anything_else
   examples: |
@@ -241,3 +384,13 @@ nlu:
     - عندي موضوع ثاني مختلف
     - محتار وما أعرف من وين أبدأ
     - ممكن توجهوني؟
+    - I have a general question
+    - I have a question not listed here
+    - can I ask for help?
+    - I want to know something but not sure if the bot supports it
+    - my question isn’t among the options
+    - can I talk to a staff member?
+    - something is unclear to me
+    - I have a different topic
+    - I’m confused and don’t know where to start
+    - can you guide me?
