@@ -103,6 +103,6 @@ haram-library-chatbot/
 
 ---
 
-## ❤️ Special Thanks
+## 🙏 Special Thanks
 
 Thanks to **Haram Library** for their support, guidance, and real-world data that helped shape this project.
